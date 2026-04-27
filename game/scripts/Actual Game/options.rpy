@@ -54,11 +54,11 @@ define config.has_voice = True
 # define config.sample_voice = "sample-voice.ogg"
 
 
-## Uncomment the following line to set an audio file that will be played while
+##Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "frozen_winter.ogg"
 
 
 ## Transitions #################################################################

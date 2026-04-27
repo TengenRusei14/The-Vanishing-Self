@@ -350,8 +350,8 @@ screen main_menu():
         textbutton _("Start") action Start() at button1
         textbutton _("Load") action ShowMenu("load") at button2
         textbutton _("Options") action ShowMenu("preferences")at button3
-        textbutton _("Help") action ShowMenu("help") at button4
-        textbutton _("About") action ShowMenu("about") at button5
+        textbutton _("About") action ShowMenu("about") at button4
+        textbutton _("Achievements") action ShowMenu("achievement_gallery") at button5
         textbutton _("Quit") action Quit(confirm=not main_menu) at button6
 
     add "gui/overlay/main_menu_logo.png"

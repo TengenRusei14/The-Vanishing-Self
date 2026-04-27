@@ -79,43 +79,124 @@ label intro:
     
     d "[povname]!!!"
 
-    "Seems like my Dad is calling me"
+    "Seems like my Father is calling me"
     pov "Coming, Father"
-    "My Dad who's name is Arnold Crimston work's at a meat store at a butcher, but loves to spend most of his time playing cards with his family"
-    "And my mom Elenoire Crimston is a wonderful and beutiful stay at home mom, but so are most of the other mom's living in this city"
+    "My Father who's name is Arnold Crimston work's at a meat store as a butcher, but loves to spend most of his time playing cards with his family"
+    "And my Mother Elenoire Crimston is a wonderful and beutiful stay at home mom, but so are most of the other mom's living in this city"
     
     $ dadname = "Arnold Crimston"
     $ momname = "Elenoire Crimston"
 
     d "Morning Son, How are you doing"
     pov "I'm doing great Father, what about you"
-    d "You know getting ready for a card game, do you want to join?"
+    d "Great"
+    pov "Is there anything you wanted to talk about"
+    d "I've just been thinking, it's been 10 years since we had you and never thought to ask you..."
+    d "What is your goal in life?"
+    "That question hit me like a arrow to a target, ever since I came to this world all I've been concerened about was how to live a better life than my previous one"
+    "But never did I think of how, which makes me look like a fool"
 
     menu:
-        "Do you wish to play cards with your Father"
+        "What do I want to do in life?"
+        "Just live life":
+            jump jll
+        "Be rich and succesful":
+            jump rns
+
+label rns:
+    pov "I want to be the richest man this world has ever seen"
+    d "That's quite an ambitious dream"
+    pov "I know, but I believe I can make it"
+    d "So how do you plan on acheviing it son"
+
+    menu:
+        d "So how do you plan on acheviing it son"
+        "I'll be a gambler":
+            jump gambler
+        "I'll start a business":
+            jump business
+
+label gambler:
+    pov "I will become the world's best blackjack gambler and make millions from it"
+    pov "No one will be able to stop me from achieving my goals"
+    d "I guess with young age comes crazy ambitions"
+    pov "As people say, the only thing stopping you from achieving your goals is that one big step"
+    d "I don't get how that is related to what we are speaking about, But I guess it would'nt hurt to try"
+    "Honestly, I spent too much time in my previous life worrying about deadlines and meeting and so many other things"
+    "That I forgot that I need to enjoy life, and now that the oppurtunity has presented itself I will now dedicate my life to being a blackjack gambler"
+    "And I'll be the richest amongst them all"
+    d "Why not challenge me to a battle of blackjack then"
+    menu:
+        d "Why not challenge me to a battle of poker then"
         "Yes":
-            jump cardgame
+            call blackjack
         "No":
-            jump nocardgame
-
-label cardgame:
-
-    pov "Yes Father let's play"
-    d "Get ready then because I won't lose again this time"
-    pov "That's what you always say Father"
-    d "Here's 400 to get started"
-    call blackjack
-
-label nocardgame:
-
-    pov "I'm sorry Father, I'm kind of busy right now"
-    d "Oh, I guess you don't really want to play with your old man"
-    pov "It's not like that Father"
-    d "No son it's ok, go carry on with what you were doing"
-    d "I guess I'll just go to the local bar and maybe find someone willing to play"
-
+            "I'm sorry Father"
+    "This still works"
+    #still needs edits
     return
 
-label blw:
-    "Works"
+label business:
+    "I remember being a slave to employement in my previous life and how much I suffered and toiled just to get by"
+    "Now I have a chance to change that and become the man at the top"
+    "Why would I refuse such an oppurtunity"
+    pov "Father, I want to be a succesful entrepreuneur who will make money of his business"
+    pov "And help many people who don't have job's a chance to work"
+    d "That's very honorable of you son"
+    d "I'm proud that you know what you want"
+    #still needs edits
+    return
+
+
+label jll:
+    pov "Father, I simply want to get a normal job and live a normal life, just like mom and you"
+    pov "And maybe even start a family"
+    d "And how do you plan on going about that?"
+
+    menu:
+        d "And how do you plan on going about that?"
+        "Studying hard in school":
+            jump normalschoolroute
+        "By getting a normal job and working hard":
+            jump normaljobroute
+
+label normalschoolroute:
+    pov "Studying hard in school"
+    d "Well then I have great news for you"
+    pov "What is it Father?"
+    d "Your mother has decided to enroll you into an academy"
+    pov "Really"
+    d "Yes, she said it would be best if you started learning early, that's why I asked you this question son"
+    "Well I guess this is the most optimal choice, since it requires less risk and is the path I took in my past life"
+    #still needs edits
+    return
+
+label normaljobroute:
+    pov "By getting a normal job and working hard"
+    d "Then what do you think about working in the emerald mines or being a hunter"
+    menu:
+        "Work in emerald mines":
+            jump em
+        "Become a Hunter":
+            jump hunter
+
+label em:
+    "Although this job has many risks I believe that the pay is decent enough to sustain both me and my family"
+    "And is a job that requires less social interactions and more manual labour so it be a good choice for me"
+    pov "Father I choose the Emerald Mines"
+    d "Very well, I'll see what I can do"
+    pov "Thank you Father"
+    #still needs edits
+    return
+
+label hunter:
+    "A job with no social interactions, no orders, or people to boss you around sounds way better than the job that I had in my previous life"
+    "Although it requires more effort and hardwork and also connnections with people who are willing to buy your hunt for a decent price"
+    "It is a fairly good job for a person like me and with my Father as a butcher it will become fairly easy"
+    pov "Father I'd like to be a hunter"
+    d "Hahaha, A Father who is a Butcher and a Son who is a hunter"
+    d "That's a very good combination don't you think?"
+    pov "Yes Father, that is part of the reason I chose this job"
+    d "Very well, Hunting Training starts tomorrow"
+    #still needs edits
     return
