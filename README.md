@@ -11,6 +11,10 @@ The story follows a man who lost his life after years of overwork and poor treat
 * Casino themed gameplay
 * Multiple outcomes
 
+## Credits
+Potato0Master ( itch.io )
+-For all the art
+
 ## Development Note
 
 This project was created in less than one week. Future updates may be released.
