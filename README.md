@@ -1,8 +1,16 @@
-Vanishing Self
+# Vanishing Self
 
-Is a Visual Novel game created in Ren'py about a character who had lost his life due to overworking and bad work treatment
-But the devs were lucky to bless him with a second chance
-And he decides to change his life around
-By being a gambler
+Vanishing Self is a visual novel created in Ren'Py.
 
-(This project was made in less than a week, future updates may appear )
+The story follows a man who lost his life after years of overwork and poor treatment. He is given a second chance and chooses to live differently in his next life. His new path leads him into the world of gambling, risk, and ambition.
+
+## Features
+
+* Visual novel storytelling
+* Branching choices
+* Casino themed gameplay
+* Multiple outcomes
+
+## Development Note
+
+This project was created in less than one week. Future updates may be released.
